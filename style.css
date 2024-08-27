@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+
+}
+header{
+    display:flex;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* #lines{
+    display:none;
+ } */
+.logo img{
+    max-width :15%;
+}
+.nav-menu ul{
+    display: flex;
+}
+ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+ color:#333;
+ transition: all ease 0.3s;
+ font-size:1.6rem;
+ 
+} ul li:last-child{
+    margin-right: 25px;
+}
+.nav-menu a:hover{
+    color:#FF9412;
+    transform:scale3d(2);
+    
+}
+.hero{
+    position:relative;
+    height: 600px;
+    overflow: hidden;
+}
+.hero img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    object-fit: cover;
+}
+.hero .hero-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #eee;
+}
+.hero-content h1{
+    font-family: "Dongle";
+  font-weight: 800;
+  
+  font-size: 3.2rem;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 4px;
+  
+}
+.hero-content h1:hover{
+   color: #ff7f50;
+  }
+.hero-content p{
+      
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+.hero-button{
+    display: inline-block;
+  background-color: #ff7f50;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Dongle";
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 30px;
+  transition: all ease-in 0.3s;
+}
+.hero-button:hover{
+    background-color: #333;
+}
+/* DESTINATION */
+.destinaton{
+    font-size: 2.1rem;
+    font-family: "Dongle";
+    
+    margin: 40px 80px;
+    text-align: center;
+}
+.destinaton h2{
+    margin-bottom: 40px;
+}
+.destination_grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+}
+.destination_item{
+    text-align: left;
+    
+}
+
+.destination-item h3{
+    text-align: left;
+    font-size: 1rem;
+}
+
+.destination_item img {
+     transition: transform .4s;;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .destination_item img:hover {
+    box-shadow: 0,0 rgba(0,0,0,0.1);
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .destination_item p{
+    font-size:1.2rem;
+    font-family: "Dongle";
+    line-height: 1;
+    font-weight: 100;
+  }
+  .destination_item h3{
+    font-size:1.6rem;
+    font-family: "Dongle-bold";
+  font-weight: 600;
+  font-style:bold;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.about{
+    text-align: center;
+   
+}
+.about h2{
+    font-size: 2.9rem;
+    font-family: "Dongle";
+    font-weight: 900;
+    margin: 8px;
+    
+}
+.about p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Dongle";
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: 8px;
+
+}
+.team_members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-member img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+    transition: all ease-in 0.3s;
+}
+.team-member h4{
+    font-size: 2.1rem;
+    font-family: "Dongle";
+}
+.team-member p{
+    font-size: 1.8rem;
+    font-family: "Dongle";
+}
+.team-member img:hover {
+    box-shadow: 0,0 rgba(0,0,0,0.1);
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.contact h3{
+    font-family: "Dongle";
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: "Dongle";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-info i{
+    margin:3px;
+}
+.form{
+    width: 100%;
+}
+.contact input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: "Dongle";
+}
+/* .checkbtn{
+float:right;
+line-height: 77px;
+font-size: 1.2rem;
+display: none;
+}
+#check{
+    display: none;
+} */
+textarea{
+    height: 200px;
+}
+form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 6px 30px;
+    border-radius: 50px;
+    font-family: "Dongle";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.form button:hover{
+    background-color: #333;
+}
+@media (max-width:1177px){
+    .hero-content h1{
+        line-height: 0.8;
+        font-size: 3.1rem;
+    }
+    .hero-content p{
+       margin-top:3px ;
+       font-size: 1.2rem;
+    }
+    .destinations img{
+        height: 250px;
+    }
+    input ,textarea{
+        width:100%;
+    }
+    .logo img{
+        max-width :25%;
+    }
+    
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        margin-bottom: 5px;
+    }
+    .hero-button{
+        margin-top: 5px;
+    }
+    .team-member img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        object-fit: cover;
+
+    }
+    .destination_item img {
+      
+        height: 290px;
+       object-fit: cover;
+     }
+     .destination_grid{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 40px;
+    }
+}
+@media(max-width:603){
+   .hero-content h1{
+    font-size: 2rem;
+
+    }
+    .hero-content p{
+        font-size: 1rem;
+    
+        }
+}
+@media(max-width:430px){
+ 
+  
+    
+    header{
+        display: none;
+    }
+    .hero-content h1 {
+            font-size: 1.3rem;
+    }
+    .hero-content p{
+        font-family: "Dongle";
+font-size: 1rem;
+    }
+    .hero-button{
+        padding: 3px 15px;
+        font-size:1rem ;
+    }
+    .destination_item h3{
+        font-size: 2rem;
+        font-family: "Dongle";
+    }
+    .destinaton{
+    font-size: 1.2rem;
+
+    }
+    .destination_grid{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 40px;
+    }
+    .team-member img{
+        width: 250px;
+        height: 300px;
+        margin: 20px;
+        object-fit: cover;
+        transition: all ease-in 0.3s;
+    }
+}
